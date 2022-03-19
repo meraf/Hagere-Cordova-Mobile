@@ -191,7 +191,7 @@ function show_events(events, month, day) {
         for(var i=0; i<events.length; i++) {
             var event_card = $("<div class='event-card'></div>");
             var event_name = $("<div class='event-name'>"+events[i]["occasion"]+":</div>");
-            var event_count = $("<div class='event-count'>"+events[i]["invited_count"]+"  </div>");
+            var event_count = $("<div class='event-count'>"+events[i]["invited_count"]+" </div>");
             if(events[i]["cancelled"]===true) {
                 $(event_card).css({
                     "border-left": "10px solid #FF1744"
@@ -305,18 +305,18 @@ var event_data = {
         "day": 11
     },
     {
-        "occasion": " Victory",
-        "invited_count": 'Adwa',
-        "year": 2022,
-        "month": 3,
-        "day": 18
-    },
-    {
-        "occasion": " Birthday",
-        "invited_count": 'Shebelawe',
+        "occasion": "Adwa",
+        "invited_count": "Happend 120 years ago",
         "year": 2022,
         "month": 3,
         "day": 11
+    },
+    {
+        "occasion": "yekatit 12 Memorial Day",
+        "invited_count": "Happend 68 years ago",
+        "year": 2022,
+        "month": 4,
+        "day": 16
     }
     ]
 };
