@@ -178,6 +178,7 @@ function show_events(events, month, day) {
     $(".events-container").empty();
     $(".events-container").show(250);
     console.log(event_data["events"]);
+    
     // If there are no events for this date, notify the user
     if(events.length===0) {
         var event_card = $("<div class='event-card'></div>");
@@ -213,10 +214,14 @@ function check_events(day, month, year) {
             event["month"]===month &&
             event["year"]===year) {
                 events.push(event);
+                
             }
     }
     return events;
 }
+
+
+
 
 // Given data for events in JSON format
 var event_data = {
@@ -317,6 +322,48 @@ var event_data = {
         "year": 2022,
         "month": 4,
         "day": 16
+    },
+    {
+        "occasion": "Adwa",
+        "invited_count": "Happend 120 years ago",
+        "year": 2022,
+        "month": 3,
+        "day": 1
+    },
+    {
+        "occasion": "FitAwrari Gebeyehu Gora ",
+        "invited_count": "Commander of Minelek's Army",
+        "year": 2022,
+        "month": 3,
+        "day": 2
+    },
+    {
+        "occasion": "Desta Dile Nasawe Tariku",
+        "invited_count": "Adwa Patriot",
+        "year": 2022,
+        "month": 3,
+        "day": 3
+    },
+    {
+        "occasion": "Dej Azmach Beyne Merid",
+        "invited_count": "Ethiopian Army Commander , A Patriot and Governor of Bale before the second italian invasion.",
+        "year": 2022,
+        "month": 3,
+        "day": 4
+    },
+    {
+        "occasion": "W/O Shewareged GedleI",
+        "invited_count": "Tsige Mengesha",
+        "year": 2022,
+        "month": 3,
+        "day": 5
+    },
+    {
+        "occasion": "Battle Of Gura",
+        "invited_count": "Emperor Yohanes II lead Ethiopian's defited the seconned ottoman Egyptian invassion. ",
+        "year": 2022,
+        "month": 3,
+        "day": 7
     }
     ]
 };
